@@ -4,7 +4,6 @@ from random import randint
 import json
 import hashlib
 import binascii
-import os
 import re
 from datetime import datetime, timedelta
 
