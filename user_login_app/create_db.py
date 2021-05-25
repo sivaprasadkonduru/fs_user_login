@@ -8,7 +8,7 @@ engine = create_engine("mysql+mysqldb://%s:%s@%s:3306/%s" %
                                    (db.DB_USER, db.DB_PASSWORD, db.DB_HOST, db.DB_DATABASE), echo=False)
 meta = MetaData()
 
-students = Table(
+users = Table(
     'user', meta,
     Column('id', Integer, primary_key=True),
     Column('username', String(50), unique=True),
